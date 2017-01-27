@@ -9,10 +9,7 @@ Vue.use(VueRouter);
 
 const routes = [
     {name: 'start', path: '/', component: MainContainer},
-    {name: 'test', path: '/test', component: App},
-    {name: 'order', path: '/:lang/order', component: App},
-    {name: 'shedule', path: '/:lang/shedule', component: App},
-    {name: 'sidebar', path: '/:lang/menu/:id', component: App}
+    {name: 'test', path: '/test', component: App}
 ];
 
 var router = new VueRouter({

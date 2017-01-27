@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div><ProHeader/></div>
-        <div><ProFooter/></div>
+        <ProContent />
+        <ProFooter />
     </div>
 </template>
 <style>
@@ -10,6 +10,7 @@
 <script>
     import ProFooter from './ProFooter.vue'
     import ProHeader from './ProHeader.vue'
+    import ProContent from './ProContent.vue'
 
     export default{
         data(){
@@ -19,7 +20,8 @@
         },
         components:{
             ProFooter,
-            ProHeader
+            ProHeader,
+            ProContent
         }
     }
 </script>

@@ -11,7 +11,7 @@
 </template>
 <style scoped lang="less">
     .container {
-        width: 100%;
+        width: 88%;
         text-align: center;
         footer {
             background-color: #d8ffee;

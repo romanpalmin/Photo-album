@@ -25,7 +25,6 @@ body {
 .container {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     width: 96%;
 }
 
@@ -46,10 +45,8 @@ body {
     background-color: #F5F5F5;
     border-bottom: 5px solid #333333;
     float: left;
-    margin-left: 1%;
-    margin-right: 1%;
     position: relative;
-    width: 98%;
+    width: 100%;
 }
 
 #nav > li {
@@ -109,5 +106,9 @@ ul li.helper {
     #nav ul.subs > li {
         display: block;
         width: auto;
+    }
+
+    .main-content{
+        padding-top: 200px;
     }
 }

@@ -1,12 +1,15 @@
 <template>
     <div>
-        <div class="title">this is template body</div>
+        <div class="main-content">this is template body {{msg}}</div>
     </div>
 </template>
 <style  scoped lang="less">
-    title{
-        font-size:5em;
-        padding-top:-200px;
+    .main-content{
+        width:70%;
+        background-color: #8080ff;
+        height:200px;
+        padding-top:60px;
+        margin:auto;
     }
 </style>
 <script>
