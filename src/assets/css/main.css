@@ -40,13 +40,14 @@ body {
     margin: 0;
     padding: 0;
     text-align: justify;
+    min-width: 1100px;
 }
 #nav {
     background-color: #F5F5F5;
-    border-bottom: 5px solid #333333;
     float: left;
     position: relative;
     width: 100%;
+    white-space: nowrap;
 }
 
 #nav > li {
@@ -67,7 +68,7 @@ body {
     font-size: 1.3em;
     line-height: 49px;
     padding: 0 15px;
-    text-transform: uppercase;
+
     text-decoration: none;
 }
 #nav > li:hover > a, #nav > a:hover {
@@ -84,8 +85,11 @@ ul li.helper {
     height: 0;
     visibility: hidden;
 }
-
-@media all and (max-width : 980px) {
+/*
+@media all and (max-width : 1080px) {
+    #nav {
+        text-align: center;
+    }
     #nav > li {
         float: none;
         border-bottom: 0;
@@ -112,3 +116,4 @@ ul li.helper {
         padding-top: 200px;
     }
 }
+*/

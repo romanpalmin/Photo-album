@@ -5,7 +5,7 @@
 </template>
 <style  scoped lang="less">
     .main-content{
-        width:70%;
+        width:76%;
         background-color: #8080ff;
         height:200px;
         padding-top:60px;
