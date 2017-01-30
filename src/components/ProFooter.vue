@@ -3,14 +3,15 @@
         <footer>
             <div class="copyright">&copy 2016 «Мария Скворцова».</div>
             <div class="email">Email: <a href="umaria-skvo@yandex.ru">maria-skvo@yandex.ru</a>  </div>
-            <div class="phone">phone</div>
-            <div class="social">social</div>
+            <div class="phone">Тел.: +7 (963)  306-06-55</div>
+            <div class="social"><a href=""><img src="./images/vk.png"></a><a href=""><img src="./images/insta.png"></a></div>
         </footer>
     </div>
 </template>
 <style scoped lang="less">
     .container {
-        min-width: 1024px;
+        padding-top:10px;
+        min-width: 1120px;
         width: 100%;
         footer {
             white-space: nowrap;
