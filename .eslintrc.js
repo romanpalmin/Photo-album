@@ -12,6 +12,7 @@ module.exports = {
   ],
   // add your custom rules here
   'rules': {
+    'brace-style':0,
     'no-multiple-empty-lines':0,
     'eol-last':0,
     'space-before-function-paren':0,
