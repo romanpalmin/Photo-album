@@ -1,42 +1,49 @@
 <template>
     <div class="container">
         <footer>
-            <div class="copyright">(c)</div>
-            <div class="email">email</div>
+            <div class="copyright">&copy 2016 «Мария Скворцова».</div>
+            <div class="email">Email: <a href="umaria-skvo@yandex.ru">maria-skvo@yandex.ru</a>  </div>
             <div class="phone">phone</div>
             <div class="social">social</div>
-            {{msg}}
         </footer>
     </div>
 </template>
 <style scoped lang="less">
     .container {
-        width: 88%;
-
-    footer {
-        background-color: #d8ffee;
-        height: 20px;
+        min-width: 1024px;
         width: 100%;
-        margin: auto;
-        text-align: center;
-        padding-top: 2px;
+        footer {
+            white-space: nowrap;
+            height: 20px;
+            width: 100%;
+            margin: auto;
+                      padding-top: 2px;
+            border-top: 2px solid black;
 
-    div {
-        float: left;
-        font-size: 1.2em;
+            div {
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+                float: left;
+                font-size: 1.2em;
+                width:25%;
+                .copyright {
+                    text-align: left;
+                }
 
-    .copyright {
-        background-color: #2e2e2e;
-        width: 20%;
-    }
+                .social {
+                    text-align: right;
+                }
 
-    .email {
-        background-color: #2e2e2e;
-        width: 20%;
-    }
-
-    }
-    }
+            }
+            .social {
+                text-align: right;
+            }
+            .copyright {
+                text-align: left;
+            }
+        }
     }
 </style>
 <script>
@@ -47,6 +54,7 @@
             }
         }
     }
+
 
 
 </script>
