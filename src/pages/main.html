@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test template</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/simple-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/template.css">
+
+</head>
+<body>
+<div class="container main">
+    <div class="row sk-header">
+        <div class="col-12 sk-title">
+            fdgfdgfdgdgfd. fgdfgfdgfdgd. fdgdfgdfg. fgdfgdgfdgd.
+        </div>
+    </div>
+    <div class="row sk-menu sk-full-screen">
+        <div class="col-2"><a href="#">Меню 1</a></div>
+        <div class="col-2"><a href="#">Меню 2</a></div>
+        <div class="col-2"><a href="#">Меню 3</a></div>
+        <div class="col-2"><a href="#">Меню 4</a></div>
+        <div class="col-2"><a href="#">Меню 5</a></div>
+        <div class="col-2"><a href="#">Меню 6</a></div>
+    </div>
+    <div class="row sk-small-screen button">
+        <div class="col-12">
+            <div id="btn-open-menu"></div>
+        </div>
+    </div>
+    <div id="toggleMenu" class="row sk-small-screen">
+        <div class="col-12">
+            <a href="#">Меню 1</a><br/>
+            <a href="#">Меню 2</a><br/>
+            <a href="#">Меню 3</a><br/>
+            <a href="#">Меню 4</a><br/>
+            <a href="#">Меню 5</a><br/>
+            <a href="#">Меню 6</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 sk-content">Здесь у нас будет определенный компонент</div>
+    </div>
+</div>
+<script language="JavaScript">
+    //toggleMenu.style.display = 'none';
+    var btn = document.getElementById('btn-open-menu');
+    var toggleMenu = document.getElementById('toggleMenu');
+
+    btn.addEventListener('click', function(){
+        if (toggleMenu.style.display === 'none'){
+            toggleMenu.style.display = '';
+        } else {
+            toggleMenu.style.display = 'none'
+        }
+    });
+</script>
+</body>
+</html>

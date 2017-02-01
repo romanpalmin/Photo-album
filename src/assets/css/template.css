@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding:0;
+    background-color: #eeeee5;
+}
+
+.container{
+    background-color: #ffffff;
+    margin: auto;
+}
+
+.main{
+    position: relative;
+    top: 100px;
+    width:80%;
+}
+
+.sk-title{
+    text-transform: uppercase;
+}
+
+.sk-header{
+    border-bottom: solid 1px #eeeee5;
+}
+
+.sk-menu{
+    text-transform: capitalize;
+}
+
+#btn-open-menu{
+    border-bottom: 17px double #717168;
+    border-top: 6px solid #717168;
+    content:"";
+    height: 5px;
+    width:30px;
+}
+
+@media screen and (max-width: 800px) {
+    .sk-small-screen-button{
+        display: block;
+    }
+    .sk-full-screen{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .sk-small-screen-button{
+        display: none;
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+    .sk-full-screen{
+        display: block;
+    }
+}

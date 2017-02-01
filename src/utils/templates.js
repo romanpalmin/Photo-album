@@ -1,5 +1,5 @@
 export default {
-    menu: `<div class="main-container-outer">
+    menu: `<!--<div class="main-container-outer">
                 <div class="main-container-inner">
                     <div class="container">
                     <div class="name-header">
@@ -21,6 +21,39 @@ export default {
                     </div>
                  </div>
                  
+                </div>
+            </div>-->
+            <div class="container main">
+                <div class="row sk-header">
+                    <div class="col-12 sk-title">
+                        fdgfdgfdgdgfd. fgdfgfdgfdgd. fdgdfgdfg. fgdfgdgfdgd.
+                    </div>
+                </div>
+                <div class="row sk-menu sk-full-screen">
+                    <div class="col-2"><router-link to="/" >Главная</router-link></div>
+                    <div class="col-2"><router-link to="/show/first" >Галерея</router-link></div>
+                    <div class="col-2"><router-link to="/show/second" >Галерея</router-link></div>
+                    <div class="col-2"><router-link to="/show/third" >Галерея</router-link></div>
+                    <div class="col-2"><router-link to="/show/next" >Галерея</router-link></div>
+                    <div class="col-2"><router-link to="/about" >Фишки</router-link></div>
+                </div>
+                <div class="row sk-small-screen-button">
+                    <div class="col-12">
+                        <div id="btn-open-menu"></div>
+                    </div>
+                </div>
+                <div id="toggleMenu" class="row sk-small-screen sk-menu">
+                    <div class="col-12 toggle-menu">
+                        <router-link to="/" >Главная</router-link><br/>
+                        <router-link to="/show/first" >Галерея</router-link><br/>
+                        <router-link to="/show/second" >Галерея</router-link><br/>
+                        <router-link to="/show/third" >Галерея</router-link><br/>
+                        <router-link to="/show/next" >Галерея</router-link><br/>
+                        <router-link to="/about" >Фишки</router-link>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 sk-content"><router-view class="view"></router-view></div>
                 </div>
             </div>`
 }
