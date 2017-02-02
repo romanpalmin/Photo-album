@@ -5,12 +5,8 @@
                 <div class="col-12">
                     <carousel :auto="3000" :watch-items="selectedImages">
                         <carousel-item v-for="(item, index) in selectedImages">
-                            <p>CarouselItem{{index}}, URL is {{item.url}}</p>
                             <div class="img-wrapper"><img :src=item.url></div>
                         </carousel-item>
-
-                        <div slot="before">Insert node before</div>
-                        <div slot="after">Insert node after</div>
                     </carousel>
                 </div>
             </div>
@@ -22,7 +18,8 @@
         width: 96%;
         max-width: 600px;
         margin: 0 auto;
-        padding: 10px;;
+        padding: 10px;
+
         img {
             cursor: pointer;
             width: 100%;

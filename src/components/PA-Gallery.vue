@@ -3,9 +3,12 @@
         <div class="container" >
             <div class="row border-bottom">
                 <div class="col-3">{{title}}</div>
-                <div class="col-9 right ">Тип
-                    <button class="slider" @click="changeShowType('slider')">Слайдер</button>
-                    <button class="galery" @click="changeShowType('galery')">Галерея</button>
+                <div class="col-9 right ">
+                    <span class="user-view">
+                        Переключить вид:
+                    <img class="checker" src="./images/slider-icon.png" width="25" height="25" alt="Слайдер" @click="changeShowType('slider')">
+                    <img class="checker" src="./images/table-icon.png" width="25" height="25" alt="Таблица" @click="changeShowType('galery')">
+                    </span>
                 </div>
             </div>
         </div>
@@ -13,7 +16,6 @@
             <Gallery v-bind:imagesSet='selectTopic' />
         </template>
         <template v-else-if="showType==='slider'">
-            <p>Показываем Слайдер</p>
             <Slider v-bind:imagesSet='selectTopic' />
         </template>
         <template v-else>
@@ -25,6 +27,7 @@
 <style scoped lang="less">
     .container {
         width: 100%;
+
         div.img-container {
             width: 96%;
             max-width: 555px;
@@ -37,6 +40,14 @@
         .border-bottom {
             border-bottom: 1px solid #eeeee5;
             padding-bottom: 10px;
+        }
+        .user-view{
+            line-height: 30px;
+            vertical-align: middle;
+            display: inline-flex;
+            .checker{
+                cursor: pointer;
+            }
         }
     }
 
