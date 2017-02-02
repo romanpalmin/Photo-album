@@ -5,13 +5,13 @@
                 <div class="col-12 float-left">
                     <template v-for="img in selectedImages">
                         <div class="float-left">
-                            <div class="img-wrapper"><img :src="img.urlSmall" @click="showCurrentDetails"
-                                                          :data-id="img.id"></div>
+                            <div class="img-wrapper">
+                                <img :src="img.urlSmall" @click="showCurrentDetails" :data-id="img.id">
+                            </div>
                         </div>
                     </template>
                 </div>
             </div>
-
         </div>
         <modal v-if="showDetails" :url="newUrl"/>
     </div>
@@ -43,7 +43,6 @@
     export default{
         data(){
             return{
-                msg:'hello vue',
                 imgSet: this.imagesSet,
                 showDetails: false,
                 parentName: '-',
@@ -70,20 +69,12 @@
         },
         computed: {
             selectedImages: function(){
-                var images = this.imagesSet[this.$route.params.id];
-                return images ? images.items : [];
-            },
-            selectedName: function(){
-                var images = this.imagesSet[this.$route.params.id];
-                return images ? images.name : '-';
+                return this.imagesSet.items;
             }
         },
         components:{
             modal
         },
     }
-
-
-
 
 </script>

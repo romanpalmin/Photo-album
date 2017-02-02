@@ -14,6 +14,7 @@
         </template>
         <template v-else-if="showType==='slider'">
             <p>Показываем Слайдер</p>
+            <Slider v-bind:imagesSet='selectTopic' />
         </template>
         <template v-else>
             <Gallery v-bind:imagesSet='imagesSet'/>
@@ -44,6 +45,7 @@
 <script>
     import FooterComponent from './PA-Footer.vue'
     import Gallery from './PA-GalleryComponent.vue'
+    import Slider from './PA-SliderComponent.vue'
     import images from './images'
 
     export default{
@@ -63,17 +65,14 @@
         },
         computed:{
             selectTopic: function(){
-                return this.imagesSet[this.routeName];
+                return this.imagesSet[this.getCurrentPathName()];
             },
             selectedKey: function(){
                 this.title = images[this.getCurrentPathName()].name;
                 return this.getCurrentPathName();
             }
         },
-        components:{
-            FooterComponent,
-            Gallery
-        },
+
         methods:{
             changeShowType: function(name){
                 this.showType = name;
@@ -87,6 +86,11 @@
         },
         mounted: function(){
             this.title = this.getTitle();
+        },
+        components:{
+            FooterComponent,
+            Gallery,
+            Slider
         }
 
     }

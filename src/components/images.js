@@ -160,6 +160,42 @@ export default {
                 'urlBig': 'static/img/bbq2-big.jpg',
                 'urlSmall': 'static/img/bbq2.jpg',
                 'title': 'static/img/'
+            },
+            {
+                'id': 25,
+                'urlBig': 'static/img/chips2-big.jpg',
+                'urlSmall': 'static/img/chips2.jpg',
+                'title': 'static/img/'
+            },
+            {
+                'id': 26,
+                'urlBig': 'static/img/bbq1-big.jpg',
+                'urlSmall': 'static/img/bbq1.jpg',
+                'title': 'static/img/'
+            },
+            {
+                'id': 27,
+                'urlBig': 'static/img/bbq2-big.jpg',
+                'urlSmall': 'static/img/bbq2.jpg',
+                'title': 'static/img/'
+            },
+            {
+                'id': 28,
+                'urlBig': 'static/img/chips2-big.jpg',
+                'urlSmall': 'static/img/chips2.jpg',
+                'title': 'static/img/'
+            },
+            {
+                'id': 29,
+                'urlBig': 'static/img/bbq1-big.jpg',
+                'urlSmall': 'static/img/bbq1.jpg',
+                'title': 'static/img/'
+            },
+            {
+                'id': 30,
+                'urlBig': 'static/img/bbq2-big.jpg',
+                'urlSmall': 'static/img/bbq2.jpg',
+                'title': 'static/img/'
             }
         ]
     }

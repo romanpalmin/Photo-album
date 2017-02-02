@@ -19,7 +19,7 @@
     .container {
         .modal {
             background-color: #2c3e50;
-            opacity: 0.9;
+            opacity: 1;
             width: 96%;
             height: 93%;
             position: absolute;
@@ -39,6 +39,7 @@
                 width: 100%;
             }
             .photo {
+                opacity: 1;
                 position: relative;
                 .close-img {
                     text-align: center;
