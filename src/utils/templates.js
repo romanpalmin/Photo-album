@@ -23,7 +23,7 @@ export default {
                 </div>
                 <div id="toggleMenu" class="row sk-small-screen sk-menu">
                     <div class="col-12 toggle-menu">
-                        <router-link to="/" >Главная</router-link><br/>
+                        <router-link to="/main" >Главная</router-link><br/>
                         <router-link to="/show/first" >Фото в детском саду</router-link><br/>
                         <router-link to="/show/second" >Фотоальбомы</router-link><br/>
                         <router-link to="/show/third" >Праздники</router-link><br/>
