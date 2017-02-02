@@ -11,7 +11,7 @@ import tmpl from './utils/templates';
 Vue.use(VueRouter);
 
 const routes = [
-    {name: 'start', path: '/', component: PaMain},
+    {name: 'start', path: '/main', component: PaMain},
     {name: 'about', path: '/about', component: PaAbout},
     {name: 'show', path: '/show', component: PaGalery},
     {name: 'showGallery', path: '/show/:id', component: PaGalery}
@@ -27,6 +27,7 @@ new Vue({
     template: tmpl.menu
 }).$mount('#app');
 
+router.replace('/main');
 var btn = document.getElementById('btn-open-menu');
 var toggleMenu = document.getElementById('toggleMenu');
 

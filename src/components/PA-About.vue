@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div>this is About Page</div>
+        <div>БИОГРАФИЯ</div>
         <div class="container">
             <div class="row">
                 <div class="col-7 justify">

@@ -21,7 +21,7 @@
             background-color: #2c3e50;
             opacity: 1;
             width: 96%;
-            height: 93%;
+            height: 90%;
             position: absolute;
             top: 0;
         }

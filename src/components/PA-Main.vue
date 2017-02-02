@@ -1,6 +1,5 @@
 <template>
     <div>
-        <div>this is Main page</div>
         <div class="container">
             <div class="row">
                 <div class="col-6">
