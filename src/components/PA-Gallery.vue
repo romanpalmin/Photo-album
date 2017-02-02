@@ -1,22 +1,22 @@
 <template>
     <div>
-        <div class="container">
-            <div class="row border-bottom" >
-                <div class="col-3">this is Galery Page {{$route.params.id}}</div>
-                 <div class="col-9 right ">Тип
+        <div class="container" >
+            <div class="row border-bottom">
+                <div class="col-3">{{title}}</div>
+                <div class="col-9 right ">Тип
                     <button class="slider" @click="changeShowType('slider')">Слайдер</button>
                     <button class="galery" @click="changeShowType('galery')">Галерея</button>
                 </div>
             </div>
         </div>
         <template v-if=" showType === 'galery'">
-            <Gallery v-bind:imagesSet='imagesSet' />
+            <Gallery v-bind:imagesSet='selectTopic' />
         </template>
         <template v-else-if="showType==='slider'">
             <p>Показываем Слайдер</p>
         </template>
         <template v-else>
-            <Gallery v-bind:imagesSet='imagesSet' />
+            <Gallery v-bind:imagesSet='imagesSet'/>
         </template>
         <FooterComponent/>
     </div>
@@ -33,8 +33,8 @@
                 height: auto;
             }
         }
-        .border-bottom{
-            border-bottom: 1px solid  #eeeee5;
+        .border-bottom {
+            border-bottom: 1px solid #eeeee5;
             padding-bottom: 10px;
         }
     }
@@ -49,12 +49,27 @@
     export default{
         data(){
             return{
-                showType: 'gallery',
+                showType: 'galery',
                 imagesSet: images,
-                imgCount: 6
+                title: '',
+                routeName: this.getCurrentPathName(),
+                selectedTopic: this.selectTopic
             }
         },
-
+        watch:{
+            selectedKey: function(){
+                return 0;
+            }
+        },
+        computed:{
+            selectTopic: function(){
+                return this.imagesSet[this.routeName];
+            },
+            selectedKey: function(){
+                this.title = images[this.getCurrentPathName()].name;
+                return this.getCurrentPathName();
+            }
+        },
         components:{
             FooterComponent,
             Gallery
@@ -62,17 +77,18 @@
         methods:{
             changeShowType: function(name){
                 this.showType = name;
+            },
+            getCurrentPathName: function(){
+                return this.$route.params.id;
+            },
+            getTitle: function(){
+                return this.imagesSet[this.routeName].name;
             }
         },
         mounted: function(){
-            this.showType = 'gallery'
+            this.title = this.getTitle();
         }
 
     }
-
-
-
-
-
 
 </script>
