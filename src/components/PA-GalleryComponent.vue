@@ -13,7 +13,6 @@
                 </div>
             </div>
         </div>
-        <modal v-if="showDetails" :url="newUrl"/>
     </div>
 </template>
 <style scoped lang="less">
@@ -39,7 +38,6 @@
 
 </style>
 <script>
-    import modal from './PA-ModalComponent.vue'
     export default{
         data(){
             return{
@@ -71,10 +69,7 @@
             selectedImages: function(){
                 return this.imagesSet.items;
             }
-        },
-        components:{
-            modal
-        },
+        }
     }
 
 </script>
