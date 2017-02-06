@@ -40,19 +40,11 @@
             selectedImages: function(){
                 var newList = [];
                 var item;
-                console.log(this.imagesSet.items);
                 for (var i = 0; i < this.imagesSet.items.length; i++){
                     item = {'url': this.imagesSet.items[i].urlBig};
                     newList.push(item);
                 }
-                console.log(newList);
                 return newList;
-            }
-        },
-
-        watch: {
-            selectedImages: function(){
-                console.log('Данные изменились...');
             }
         },
         components: {
@@ -60,6 +52,7 @@
         'carousel-item': CarouselItem
         }
      }
+
 
 
 

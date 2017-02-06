@@ -60,7 +60,8 @@
                     for (let idx = 0; idx < this.selectedImages.length; idx++){
                         if (this.selectedImages[idx].id === +id){
                             this.newUrl = this.selectedImages[idx].urlBig;
-                            this.showDetails = true;
+                            this.$parent.showType = 'frame';
+                            this.$parent.imageUrl = this.newUrl;
                         }
                     }
                 }
