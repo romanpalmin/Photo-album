@@ -9,10 +9,10 @@ export default {
                 </div>
                 <div class="row sk-menu sk-full-screen">
                     <div class="col-2 menu selected-menu" ><router-link to="/main" >Главная</router-link></div>
-                    <div class="col-2 menu"><router-link to="/show/first" >Детский сад</router-link></div>
-                    <div class="col-2 menu"><router-link to="/show/second" >Фотоальбомы</router-link></div>
-                    <div class="col-2 menu"><router-link to="/show/third" >Праздники</router-link></div>
-                    <div class="col-2 menu"><router-link to="/show/next" >Фотосессии</router-link></div>
+                    <div class="col-2 menu"><router-link to="/show/kindergarten" >Детский сад</router-link></div>
+                    <div class="col-2 menu"><router-link to="/show/albums" >Фотоальбомы</router-link></div>
+                    <div class="col-2 menu"><router-link to="/show/holidays" >Праздники</router-link></div>
+                    <div class="col-2 menu"><router-link to="/show/sessions" >Фотосессии</router-link></div>
                     <div class="col-2 right menu"><router-link to="/about" >Обо мне</router-link></div>
                 </div>
                 
@@ -24,10 +24,10 @@ export default {
                 <div id="toggleMenu" class="row sk-small-screen sk-menu">
                     <div class="col-12 toggle-menu">
                         <router-link to="/main" >Главная</router-link><br/>
-                        <router-link to="/show/first" >Фото в детском саду</router-link><br/>
-                        <router-link to="/show/second" >Фотоальбомы</router-link><br/>
-                        <router-link to="/show/third" >Праздники</router-link><br/>
-                        <router-link to="/show/next" >Фотосессии</router-link><br/>
+                        <router-link to="/show/kindergarten" >Фото в детском саду</router-link><br/>
+                        <router-link to="/show/albums" >Фотоальбомы</router-link><br/>
+                        <router-link to="/show/holidays" >Праздники</router-link><br/>
+                        <router-link to="/show/sessions" >Фотосессии</router-link><br/>
                         <router-link to="/about" >Обо мне</router-link>
                     </div>
                 </div>

@@ -77,12 +77,5 @@
                 this.$parent.showDetails = false;
             }
         }
-
-
     }
-
-
-
-
-
 </script>

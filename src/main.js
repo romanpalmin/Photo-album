@@ -28,8 +28,8 @@ new Vue({
 }).$mount('#app');
 
 router.replace('/main');
-var btn = document.getElementById('btn-open-menu');
-var toggleMenu = document.getElementById('toggleMenu');
+let btn = document.getElementById('btn-open-menu');
+let toggleMenu = document.getElementById('toggleMenu');
 
 btn.addEventListener('click', function () {
     if (toggleMenu.style.display === 'none') {

@@ -1,7 +1,11 @@
 body {
     margin: 0;
     padding:0;
-    background-color: #eeeee5;
+    /*background-color: #eeeee5;*/
+}
+
+.container .img-wrapper img{
+    border-radius: 8%;
 }
 
 .name{
@@ -43,8 +47,8 @@ body {
 
 .main{
     position: relative;
-    top: 100px;
-    width:80%;
+    top: 40px;
+    width:90%;
 }
 
 .leftalign{

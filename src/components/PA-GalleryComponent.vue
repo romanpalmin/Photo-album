@@ -57,9 +57,8 @@
             showCurrentDetails: function(evt){
                 var id = evt.target.dataset.id;
                 if (this.selectedImages && this.selectedImages.length > 0 ) {
-                    for (var idx = 0; idx < this.selectedImages.length; idx++){
+                    for (let idx = 0; idx < this.selectedImages.length; idx++){
                         if (this.selectedImages[idx].id === +id){
-                            console.log(this.selectedImages[idx].urlBig);
                             this.newUrl = this.selectedImages[idx].urlBig;
                             this.showDetails = true;
                         }

@@ -113,35 +113,3 @@ ul li.helper {
 #nav > li.first{
     text-align: left;
 }
-/*
-@media all and (max-width : 1080px) {
-    #nav {
-        text-align: center;
-    }
-    #nav > li {
-        float: none;
-        border-bottom: 0;
-        margin-bottom: 0;
-        text-align: center;
-    }
-    #nav ul.subs {
-        position: relative;
-        top: 0;
-    }
-    #nav li:hover ul.subs {
-        display: none;
-    }
-    #nav li #s1:target + ul.subs,
-    #nav li #s2:target + ul.subs {
-        display: block;
-    }
-    #nav ul.subs > li {
-        display: block;
-        width: auto;
-    }
-
-    .main-content{
-        padding-top: 200px;
-    }
-}
-*/
