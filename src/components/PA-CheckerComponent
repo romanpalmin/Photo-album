@@ -3,15 +3,72 @@
     </div>
 </template>
 <style scoped lang="less">
-
+    .palmira-class {
+        cursor: zoom-in;
+        display: table-cell;
+        height: 25px;
+        vertical-align: bottom;
+    }
+    .vkorg-logout {
+        display: none;
+    }
+    .vkorg-on {
+        display: none;
+    }
+    .palmira-checkbox {
+    &:not(checked) {
+         opacity: 0;
+         position: absolute;
+     }
+    &:not(checked)+label {
+         cursor: pointer;
+         padding: 0 0 0 60px;
+         position: relative;
+    before {
+        background: #CDD1DA;
+        border-radius: 13px;
+        box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
+        content: '';
+        height: 26px;
+        left: 0;
+        position: absolute;
+        top: -4px;
+        width: 50px;
+    }
+    after {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        content: '';
+        height: 22px;
+        left: 2px;
+        position: absolute;
+        top: -2px;
+        transition: all .2s;
+        width: 22px;
+    }
+    }
+    &:checked+label {
+    before {
+        background: #9FD468;
+    }
+    after {
+        left: 26px;
+    }
+    }
+    &:focus+label {
+    before {
+        box-shadow: 0 0 0 3px rgba(255, 255, 0, 0.5);
+    }
+    }
+    }
 
 </style>
 <script>
     export default{
         data(){
             return{
-                msg:'hello vue',
-                currentUrlImg: this.url
+                msg:'hello vue'
             }
         },
         props: ['url'],
