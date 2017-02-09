@@ -43,9 +43,6 @@
         components:{
             FooterComponent,
             Slider
-        },
-        mounted(){
-            console.log(images);
         }
     }
 </script>

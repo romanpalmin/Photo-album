@@ -5,8 +5,8 @@
             <div class="col-3 center">Email: <a href="mailto: maria-skvo@yandex.ru"> maria-skvo@yandex.ru</a></div>
             <div class="col-3 center" >Тел.: +7 (963) 306-06-55</div>
             <div class="col-2 right">
-                <a href="https://vk.com/club79653378"><img src="./images/vk.png"></a>
-                <a href="https://www.instagram.com/skvortsovaphotography/"><img src="./images/insta.png"></a>
+                <a href="https://vk.com/club79653378" target="_blank"><img src="./images/vk.png"></a>
+                <a href="https://www.instagram.com/skvortsovaphotography/" target="_blank"><img src="./images/insta.png"></a>
             </div>
         </div>
     </div>
